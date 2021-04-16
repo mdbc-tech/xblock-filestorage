@@ -7,7 +7,7 @@ or as links to the files in their original location.
 import textwrap
 
 import pkg_resources
-import urllib2
+import urllib
 import mimetypes
 
 from xblock.core import XBlock
