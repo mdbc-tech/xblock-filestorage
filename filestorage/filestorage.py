@@ -149,20 +149,21 @@ class FileStorageXBlock(XBlock):
             self.output_code = Filter.get_embed_code(url=self.document_url)
             self.message = "Note: Some services may require you to be signed into them to access documents stored there."
             self.message_display_state = "block"
-
-	    self.model1 = "SELECTED=selected"
-	    self.model2 = ""
-	    # self.model3 = ""
+            
+        self.model1 = "SELECTED=selected"
+        self.model2 = ""
+        #self.model3 = ""
 
         # output model = 2 means add a reference to the document
         if self.output_model == "2":
             self.output_code = "<a href="+self.document_url+" target='_blank'>"+self.reference_name+"</a>"
             self.message = ""
             self.message_display_state = "none"
-
-	    self.model1 = ""
-	    self.model2 = "SELECTED=selected"
-	    # self.model3 = ""
+            # self.model1 = ""
+        self.model1 =""
+            #
+        self.model2 = "SELECTED=selected"
+	        # self.model3 = ""
 
         # output model = 3 means upload the document and add a reference to it
         # if self.output_model == "3":
