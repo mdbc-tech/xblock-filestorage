@@ -7,7 +7,7 @@ or as links to the files in their original location.
 import textwrap
 
 import pkg_resources
-import urllib
+import urllib3
 import mimetypes
 
 from xblock.core import XBlock
@@ -16,9 +16,8 @@ from xblock.fields import Scope, String
 from django.conf import settings
 
 import logging
-from functools import partial
-from cache_toolbox.core import del_cached_content
-
+from functools import cache_toolbox.core
+#
 from xmodule.contentstore.django import contentstore
 from xmodule.contentstore.content import StaticContent
 from opaque_keys.edx.keys import CourseKey
