@@ -1,6 +1,6 @@
 import textwrap
 
-import urllib2
+import urllib3
 from urllib import urlencode
 from urlparse import parse_qs, urlsplit, urlunsplit
 import json
